@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="mainCSS.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <section class="paint">
+        <header class="paint-header">
+            <p>Edytor Graficzny</p>
+        </header>
+        <!-- content -->
+        <div class="paint-content">
+            <!-- canvas -->
+            <div class="canvas">
+                <div class="canvasStyle">
+                    <canvas id="canvasObject" width="750" height="650"></canvas>
+                    <div class="selectImage" id="imageGroup">
+                        <img src="https://picsum.photos/700/500/?random=1" alt="" class="mini" style="width: 100px; height: 100px;">
+                        <img src="https://picsum.photos/700/500/?random=2" alt="" class="mini" style="width: 100px; height: 100px;">
+                        <img src="https://picsum.photos/700/500/?random=3" alt="" class="mini" style="width: 100px; height: 100px;">
+                        <img src="https://picsum.photos/700/500/?random=4" alt="" class="mini" style="width: 100px; height: 100px;">
+                    </div>
+                </div>
+                <p style="position: absolute; bottom: -30px;">kursor (X, Y): <span id="posX">0</span>px <span id="posY">0</span>px</p>
+            </div>
+            <!-- control panel -->
+            <div class="control-panel">
+                <!-- color edition -->
+                <div id="colors" class="changeColor">
+                    <ul id="colorList">
+                        <li title="set color" class="colorRed"></li>
+                        <li title="set color" class="colorGreen"></li>
+                        <li title="set color" class="colorBlue"></li>
+                        <li title="set color" class="colorBlack"></li>
+                    </ul>
+                </div>
+                <!-- drawing path -->
+                <div class="painting">
+                    <button id="path" class="buttonPath"></button>
+                    <input type="range" class="pathSize" id="range" step="5" min="5" max="100" value="15">
+                    <p>rozmiar: <span class="fontSize" id="pathSize">15</span> px</p>
+                </div>
+                <!-- filters -->
+                <div class="filters">
+                    <!-- blur -->
+                    <p>rozmycie</p>
+                    <input type="range" class="pathSize" id="range" step="5" min="5" max="100" value="15" name="blur">
+
+                    <!-- sharpness -->
+                    <p>kontrast</p>
+                    <input type="range" class="pathSize" id="range" step="5" min="5" max="100" value="15" name="sharpness">
+                </div>
+                <!-- photo choose -->
+                <div class="loadPhoto">
+                    <button id="load" class="buttonLoadPhoto"></button>
+                </div>
+            </div>
+        </div>
+        <img src="img/shadow1.png" alt="shadow1" class="shadowImg">
+        <!-- footer -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+            ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+</body>
+
+</html>

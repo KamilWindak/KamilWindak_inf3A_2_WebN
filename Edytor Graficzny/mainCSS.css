@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition-duration: 400ms;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/bg.png");
+}
+/* fonts */
+h1 {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+p,
+span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.fontSize {
+    font-size: 15px;
+}
+
+.paint {
+    width: 100%;
+    max-width: 990px;
+    margin: 5vh auto 0;
+    background-color: #ececec;
+}
+
+/* paint header */
+.paint-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: dimgrey;
+    border-bottom: solid 2px white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+/* content */
+.paint-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    max-width: 1200px;
+}
+
+/* objekt canvas */
+.canvas {
+    background-image: url("img/pusty-obszar.jpg");
+    width: 850px;
+    height: 750px;
+    position: relative;
+    box-shadow: 1px 0px 10px rgb(139, 139, 139);
+
+}
+
+.canvasStyle {
+    background-color: #FFFFFF;
+    width: 750px;
+    height: 650px;
+    position: absolute;
+    transform: translate(50px, 50px);
+    -webkit-transform: translate(50px, 50px);
+    -moz-transform: translate(50px, 50px);
+    -ms-transform: translate(50px, 50px);
+    -o-transform: translate(50px, 50px);
+    box-shadow: 1px 0px 20px black;
+    cursor: pointer;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100px;
+    height: 750px;
+    margin-left: 20px;
+    position: relative;
+
+
+}
+
+.shadowImg {
+    position: absolute;
+    bottom: -45px;
+    transform: translate(-9%, -40%);
+    z-index: -1;
+    -webkit-transform: translate(-9%, -40%);
+    -moz-transform: translate(-9%, -40%);
+    -ms-transform: translate(-9%, -40%);
+    -o-transform: translate(-9%, -40%);
+}
+
+/* interface */
+/* colors */
+.changeColor,
+.painting,
+.filters,
+.loadPhoto {
+    margin: 68px auto 0;
+    width: 100%;
+    padding: 20px 0 0;
+    border: solid 1px #949494;
+    position: relative;
+}
+
+.changeColor ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.changeColor::before {
+    content: 'kolor';
+}
+
+.painting::before {
+    content: 'ołówek';
+}
+
+.filters::before {
+    content: 'filtry';
+}
+
+.loadPhoto::before {
+    content: 'plik';
+}
+
+.changeColor::before,
+.painting::before,
+.filters::before,
+.loadPhoto::before {
+
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: -1px;
+    background-color: red;
+    font-size: 14px;
+    line-height: 20px;
+    border: solid 1px #949494;
+    border-bottom: none;
+    background-color: #949494;
+}
+
+.changeColor ul li {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px 10px;
+    cursor: pointer;
+}
+
+
+.changeColor ul li:focus {
+    border: solid 5px red;
+}
+
+.colorRed {
+
+    background-color: red;
+}
+
+.colorGreen {
+    background-color: green;
+
+}
+
+.colorBlue {
+    background-color: blue;
+
+}
+
+.colorBlack {
+    background-color: black;
+
+}
+
+/* path */
+.painting,
+.filters,
+.loadPhoto {
+    margin: 40px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+button,
+.pathSize {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 0 auto 20px;
+}
+
+.pathSize {
+    width: calc(100% - 10px);
+    margin-bottom: 0;
+}
+
+button:hover,
+div[title~='color']:hover {
+    box-shadow: 1px 1px 15px #c7c7c7;
+    box-sizing: border-box;
+    background-color: #c7caca;
+
+}
+
+.buttonPath {
+    background-image: url("img/drawing.png");
+
+}
+
+.buttonLoadPhoto {
+    background-image: url("img/photo.png");
+}
+
+.buttonStop {
+    background-image: url("img/icon.png");
+}
+
+/* choosing photo */
+.selectImage {
+    display: none;
+}
+
+.selectImage.visibility {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    background-color: #FFFFFF;
+    border: solid 1px #c7c7c7;
+    z-index: 4;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.selectImage img {
+    margin: 20px;
+}
+
+.selectImage img:hover {
+    border: solid 1px orange;
+    box-shadow: 1px 0px 30px orange;
+
+}
