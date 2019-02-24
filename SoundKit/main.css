@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(144, 239, 245, 0.92) !important;
+    font-size: 35px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+.buttons{
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+ #play{
+    margin-left: 10px;
+}
+
+.soundBlock{
+    border: solid white 1px;
+    border-radius: 10px;
+    text-align: center;
+    height: 120px;
+    margin-bottom: 10px;
+    min-width: 320px;
+} 
+
+audio{
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="row buttons">
+        <div class="col">CH 1: 
+            <button type="button" id="play" onclick="playAudio(channel1)" class="btn btn-secondary">Play</button>
+            <button type="button" id="rec1" class="btn btn-info">Record</button> 
+            <br>
+            CH 2: 
+            <button type="button" id="play" onclick="playAudio(channel2)" class="btn btn-secondary">Play</button>
+            <button type="button" id="rec2" class="btn btn-info">Record</button> 
+            <br>
+            CH 3: 
+            <button type="button" id="play" onclick="playAudio(channel3)" class="btn btn-secondary">Play</button>
+            <button type="button" id="rec3" class="btn btn-info">Record</button> 
+            <br> 
+            CH 4: 
+            <button type="button" id="play" onclick="playAudio(channel4)" class="btn btn-secondary">Play</button>
+            <button type="button" id="rec4" class="btn btn-info">Record</button> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"> <div class="soundBlock">A (boom)<audio src="sounds/boom.wav" controls id="boom"></audio></div></div>
+        <div class="col"> <div class="soundBlock">S (clap)<audio src="sounds/clap.wav" controls id="clap"></audio></div></div>
+        <div class="col"> <div class="soundBlock">D (hihat)<audio src="sounds/hihat.wav" controls id="hihat"></audio></div></div>
+    </div>
+    <div class="row">
+        <div class="col"> <div class="soundBlock">F (kick)<audio src="sounds/kick.wav" controls id="kick"></audio></div></div>
+        <div class="col"> <div class="soundBlock">G (openhat)<audio src="sounds/openhat.wav" controls id="openhat"></audio></div></div>
+        <div class="col"> <div class="soundBlock">H (ride)<audio src="sounds/ride.wav" controls id="ride"></audio></div></div>
+    </div>
+    <div class="row">
+        <div class="col"> <div class="soundBlock">J (snare)<audio src="sounds/snare.wav" controls id="snare"></audio></div></div>
+        <div class="col"> <div class="soundBlock">K (tink)<audio src="sounds/tink.wav" controls id="tink"></audio></div></div>
+        <div class="col"> <div class="soundBlock">L (tom)<audio src="sounds/tom.wav" controls id="tom"></audio></div></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background: #27292e;
+}
+#canvas{
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 5px solid #efefef;
+}
+#buttons{
+
+    display: block;
+    margin: 0 auto;
+    width:34vh;
+    height:8vh;
+}
+button{
+
+    font-size: 125%;
+    font-weight: bold;
+    color: #efefef;
+    border: none;
+    margin-left: 2%;
+    float: left;
+    display: block;
+    width:16vh;
+    height:8vh;
+    background: #ff9800;
+}
